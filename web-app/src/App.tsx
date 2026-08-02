@@ -555,7 +555,13 @@ function MainApp() {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       
-      const text = await response.text();
+      let text = await response.text();
+      // Strip BOM or any garbage characters before the actual JSON object
+      const startIndex = text.indexOf('{');
+      if (startIndex !== -1) {
+        text = text.substring(startIndex);
+      }
+      
       let json;
       try {
         json = JSON.parse(text);
