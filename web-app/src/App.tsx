@@ -140,7 +140,7 @@ function Home({ data, loading, error, pinnedDistrict, tooltipHandlers, fetchRef,
     <>
       <div className="header">
         <div>
-          <h1>Kerala Rainfall Alerts</h1>
+          <h1>Holiday Radar</h1>
           <p>Real-time district-wise forecast parsed from IMD</p>
         </div>
         <div style={{ display: 'flex', gap: '1rem' }}>
