@@ -1,0 +1,13 @@
+[build]
+  # The directory where the package.json and source code lives
+  base = "web-app"
+  
+  # The command Netlify should run to build the React app
+  command = "npm run build"
+  
+  # The directory Netlify should publish (where Vite outputs the build)
+  publish = "dist" # Note: relative to the base directory!
+
+[build.environment]
+  # Prevents Netlify from treating minor warnings as fatal errors
+  CI = "false"
