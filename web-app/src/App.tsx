@@ -551,16 +551,27 @@ function MainApp() {
       const response = await fetch('/forecast.json', {
         cache: 'no-store',
       });
-      if (!response.ok) throw new Error('Failed to fetch data');
-      const json = await response.json();
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      
+      const text = await response.text();
+      let json;
+      try {
+        json = JSON.parse(text);
+      } catch (e) {
+        console.error("Failed to parse JSON. Response text:", text);
+        setError(`Failed to parse JSON. Check console for details. Response started with: ${text.substring(0, 50)}`);
+        return;
+      }
       
       if (json.status === 'success') {
         setData(json.data);
       } else {
         setError(json.error || 'Failed to fetch data');
       }
-    } catch (err) {
-      setError('Could not fetch forecast data.');
+    } catch (err: any) {
+      setError(`Could not fetch forecast data: ${err.message || err.toString()}`);
     } finally {
       setLoading(false);
     }
