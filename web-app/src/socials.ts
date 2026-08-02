@@ -1,0 +1,16 @@
+export const collectorSocials: Record<string, { fb?: string, ig?: string, x?: string }> = {
+  "Thiruvananthapuram": { fb: "https://facebook.com/collectortvpm", ig: "https://instagram.com/collectortvpm", x: "https://twitter.com/collectortvpm" },
+  "Kollam": { fb: "https://facebook.com/dckollam", ig: "https://instagram.com/district_collector_kollam" },
+  "Pathanamthitta": { fb: "https://facebook.com/dc.pathanamthitta", ig: "https://instagram.com/collector_pathanamthitta" },
+  "Alappuzha": { fb: "https://facebook.com/districtcollectoralappuzha", ig: "https://instagram.com/district._collector_alappuzha", x: "https://twitter.com/DistColAlp" },
+  "Kottayam": { fb: "https://facebook.com/collectorkottayam", ig: "https://instagram.com/kottayamcollector" },
+  "Idukki": { fb: "https://facebook.com/collectoridukki", ig: "https://instagram.com/collector_idukki" },
+  "Ernakulam": { fb: "https://facebook.com/dcekm", ig: "https://instagram.com/dcernakulam", x: "https://twitter.com/ernakulamdc" },
+  "Thrissur": { fb: "https://facebook.com/thrissurcollector", ig: "https://instagram.com/collector_thrissur" },
+  "Palakkad": { fb: "https://facebook.com/DISTRICTCOLLECTORPALAKKAD", ig: "https://instagram.com/collectorpalakkad", x: "https://twitter.com/DC_Pkd" },
+  "Malappuram": { fb: "https://facebook.com/malappuramcollector", ig: "https://instagram.com/collectormalappuram" },
+  "Kozhikode": { fb: "https://facebook.com/CollectorKKD", ig: "https://instagram.com/collectorkkd", x: "https://twitter.com/collectorkkd" },
+  "Wayanad": { fb: "https://facebook.com/wayanadWE", ig: "https://instagram.com/collectorwayanad" },
+  "Kannur": { fb: "https://facebook.com/CollectorKNR", ig: "https://instagram.com/collectorknr", x: "https://twitter.com/CollectorKnr" },
+  "Kasaragode": { fb: "https://facebook.com/KasaragodCollector", ig: "https://instagram.com/kasaragod_collector" },
+};

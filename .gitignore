@@ -1,0 +1,7 @@
+node_modules/
+backend/node_modules/
+web-app/node_modules/
+__pycache__/
+.env
+.DS_Store
+web-app/dist/
